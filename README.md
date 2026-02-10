@@ -1,54 +1,51 @@
- Data Quality Validator
-An automated tool designed to perform comprehensive�Data Auditing, Visualization, and Cleaning. This application helps Data Scientists and Analysts ensure their datasets are "ML-Ready" by identifying missing values, duplicates, and statistical outliers before the modeling phase.
+# Data Quality Validator App
 
- Key Features
-*  Automated Audit:�Instantly detects missing values, duplicate rows, and data type inconsistencies.
-*  Advanced Visualizations:
-o Missing Value Heatmap:�Identify gaps in your data visually.
-o Correlation Matrix:�Professionally formatted heatmap with optimized font sizing and decimal control.
-o Distribution Analysis:�Interactive Plotly histograms to explore data skewness.
-*  Outlier Detection:�Mathematically identifies "weird" data points using Z-Score Analysis (Z > 3).
-*  Geospatial Mapping:�Automatically detects and plots Latitude and Longitude data.
-*  Data Cleaning:�One-click fixes to remove duplicates, fill missing values with averages, and download the cleaned CSV.
+An end-to-end Python application designed to automate the **Data Auditing and Cleaning** process. This tool allows users to upload datasets and instantly receive a health report, identify outliers, and perform automated cleaning.
 
- Included Datasets
-This repository includes a�data/�folder with two specific datasets to demonstrate the tool's capabilities:
-1. loan_approval_data.csv: A complex, real-world financial dataset used to test feature correlation and outlier detection in high-dimensional data.
-2. sample_data.csv: A specialized dataset containing intentional errors (duplicates and nulls) designed to verify the validator's cleaning functions.
+##  Overview
+Before any Machine Learning model can be built, the data must be "clean." This app identifies common data "diseases" such as missing values, duplicate records, and statistical outliers using Z-score analysis.
 
- Technology Stack
-* Frontend:�Streamlit
-* Data Processing:�Pandas,�NumPy
-* Visualizations:�Seaborn,�Matplotlib,�Plotly
+##  Key Features
+- **Interactive Data Explorer:** Browse your dataset with high-performance tables.
+- **Automated Quality Audit:** Detects missing values and duplicates instantly.
+- **Statistical Outlier Detection:** Identifies "weird" data points using Z-score calculation (Z > 3).
+- **Advanced Visualizations:** 
+    - **Missing Value Heatmap:** Visualizes the density of missing information.
+    - **Correlation Matrix:** Professionally formatted heatmap to see relationships between variables.
+    - **Distribution Plots:** Interactive Plotly histograms to understand data skewness.
+- **Automated Data Cleaning:** One-click fixes for removing duplicates and filling missing values.
 
- Installation & Setup
-Follow these steps to run the application locally:
-1. Clone the Repository
-codeBash
-git clone https://github.com/sailakshmipattysapu/Data_quality_validator.git
-cd Data-Quality-Validator
-2. Set Up a Virtual Environment
-Windows:
-codeBash
-python -m venv venv
-.\venv\Scripts\activate
-Mac/Linux:
-codeBash
-python -m venv venv
-source venv/bin/activate
-3. Install Dependencies
-codeBash
-pip install -r requirements.txt
-4. Run the App
-codeBash
-streamlit run app.py
+##  Included Datasets (for Testing)
+I have included a `data/` folder with two specific datasets to demonstrate the validator's power:
+1. `loan_approval_data.csv`: A complex dataset involving financial metrics, perfect for testing Correlation and Outlier detection.
+2. `sample_data.csv`: A smaller dataset with intentional errors to test cleaning and missing value detection.
 
- How To Use
-1. Upload:�Use the sidebar to upload either�loan_approval_data.csv�or�sample_data.csv�from the included�data/�folder.
-2. Inspect:�View the�Quality Analysis�tab to see the "Health Report" of your file.
-3. Visualize:�Navigate to�Visual Charts�to identify patterns in missing data and feature relationships.
-4. Clean:�Go to the�Data Cleaning�tab to apply fixes and download your processed, high-quality dataset.
+##  Technology Stack
+- **Frontend:** Streamlit
+- **Data Engine:** Pandas & Numpy
+- **Visualization:** Seaborn, Matplotlib, and Plotly
+- **Environment:** Python 3.9+
 
- License
-Distributed under the MIT License. See�LICENSE�for more information.
+##  Installation & Setup
 
+1. **Clone the Repository**
+   ```bash
+   git clone (https://github.com/sailakshmipattysapu/Data_quality_validator.git)
+   cd Data-Quality-Validator
+
+2. **Set Up a Virtual Environment**
+**Windows:**
+      python -m venv venv
+      .\venv\Scripts\activate
+**Mac/Linux:**
+      python -m venv venv
+      source venv/bin/activate
+3. **Install Dependencies**
+      pip install -r requirements.txt
+4. **Run the App**
+     streamlit run app.py
+**How To Use**
+**Upload:** Use the sidebar to upload either loan_approval_data.csv or sample_data.csv from the included data/ folder.
+**Inspect:** View the Quality Analysis tab to see the "Health Report" of your file.
+**Visualize:** Navigate to Visual Charts to identify patterns in missing data and feature relationships.
+**Clean:** Go to the Data Cleaning tab to apply fixes and download your processed, high-quality dataset.
