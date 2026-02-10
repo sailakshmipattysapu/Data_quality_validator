@@ -1,0 +1,11 @@
+Employee_ID,Name,Age,Salary,Department
+101,Alice,25.0,50000.0,HR
+102,Bob,30.0,54000.0,IT
+103,Charlie,,60000.0,IT
+104,David,35.0,58000.0,Sales
+105,Eva,28.0,,HR
+101,Alice,25.0,50000.0,HR
+107,Grace,150.0,62000.0,Sales
+108,Henry,32.0,500000.0,IT
+109,Ivan,29.0,59000.0,None
+110,Jack,,55000.0,Sales

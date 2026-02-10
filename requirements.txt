@@ -1,0 +1,17 @@
+attrs~=25.3.0
+distro~=1.9.0
+protobuf~=6.32.1
+filelock~=3.19.1
+fastapi~=0.118.3
+uvicorn
+pandas~=2.2.3
+numpy~=2.0.0
+streamlit
+requests~=2.32.5
+pandas
+numpy
+streamlit
+matplotlib
+seaborn
+plotly
+openpyxl
